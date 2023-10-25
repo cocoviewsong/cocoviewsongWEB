@@ -7,6 +7,8 @@
   <link href="./bootstrap.min.css" rel="stylesheet">
   <link href="./综合主页.css" rel="stylesheet">
   <script src="./bootstrap.bundle.min.js"></script>
+      <link rel="stylesheet" href="./APlayer.min.css">
+    <script src="./APlayer.min.js"></script>
 </head>
 
 <body>
@@ -70,7 +72,46 @@
   <p class="wenzi1 lead ">It is free and relax.<br>
   if you like story,you must like it</p>
 </div>
-
+<div id="aplayer" ></div>
+<script class="container">
+  const ap = new APlayer({
+      container: document.getElementById('aplayer'),
+      fixed: false,               
+      autoplay: false,           
+      volume: 0.6,                
+      lrcType: 3,               
+      mutex: true,               
+      order: 'list',         
+      preload: 'auto',          
+      listFolded: true,       
+      theme: '#ee8243',       
+      audio: [
+      {
+        name: '『ユイカ』 - 17さいのうた。',         
+          artist: 'v',     
+          url: 'music/『ユイカ』 - 17さいのうた。.flac',         
+          cover: '/img/3.png',     
+          lrc:  'singtxt/17さいのうた。 - 『ユイカ』.lrc',        
+          theme: '#eeeeee'       
+   },{
+          name: 'Dacapo',         
+          artist: 'v',      
+          url: '/music/Da Capo.flac',      
+          cover: '/img/2.png',   
+          lrc:  'singtxt/Da Capo - HOYO-MiX.lrc',        
+          theme: '#eeeeee'      
+      },
+      {
+        name: '『ユイカ』 - 17さいのうた。',          
+          artist: 'v',       
+          url: 'music/『ユイカ』 - 17さいのうた。.flac',     
+          cover: '/img/3.png',     
+          lrc:  'singtxt/17さいのうた。 - 『ユイカ』.lrc',        
+          theme: '#eeeeee'    
+   } ]
+  });
+</script>
+        
 <footer class="fixed-bottom">
   <div class="container">
     <span class="text-muted">wwwwwwwwww</span>
