@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+h1{
+    text-align: center;
+}
+
+.fanhui1 {text-decoration:overline;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+  }
+
+.shezhi{text-decoration:overline;
+    float:right;
+    top: 0;
+    margin-top: -46px;
+
+}
