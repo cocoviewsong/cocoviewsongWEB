@@ -17,7 +17,7 @@ function searchSong() {
   var songName = input.val();
 
   // 拼接请求的URL
-  var url = "http://localhost:3000/search?keywords=" + songName;
+  var url = "https://music-api-beryl-chi.vercel.app/search?keywords=" + songName;
 
   // 发送GET请求
   $.get(url, function (data) {
@@ -43,7 +43,7 @@ function searchSong() {
         var id = songs[index].id;
 
         // 拼接请求的URL
-        var url = "http://localhost:3000/song/url?id=" + id;
+        var url = "https://music-api-beryl-chi.vercel.app/song/url?id=" + id;
 
         // 发送GET请求
         $.get(url, function (data) {
@@ -58,7 +58,7 @@ function searchSong() {
         });
 
         // 拼接请求的URL
-        var url = "http://localhost:3000/song/detail?ids=" + id;
+        var url = "https://music-api-beryl-chi.vercel.app/song/detail?ids=" + id;
 
         // 发送GET请求
         $.get(url, function (data) {
